@@ -1,5 +1,4 @@
 
-
 #
 # Be sure to run `pod lib lint Yodo1MasMediationFacebook.podspec' to ensure this is a
 # valid spec before submitting.
@@ -35,10 +34,9 @@ s.ios.deployment_target = '9.0'
 s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC", "VALID_ARCHS"=>"arm64 arm64e armv7 armv7s x86_64", "VALID_ARCHS[sdk=iphoneos*]" => "arm64 arm64e armv7 armv7s", "VALID_ARCHS[sdk=iphonesimulator*]" => "x86_64"}
 
 s.static_framework = true
-s.source           = { :http => 'https://mas-artifacts.yodo1.com/4.2.0/iOS/Dev/Yodo1MasMediationFacebook-4.2.0.zip' }
+s.source_files = s.name + '/Classes/**/*'
 s.public_header_files = s.name + '/Classes/**/*.h'
 s.dependency 'Yodo1MasCore', '4.2.0'
-# s.dependency 'FBAudienceNetwork', '6.2.1'
-s.vendored_frameworks = s.name + '/Lib/**/*.framework'
+s.dependency 'FBAudienceNetwork', '6.5.0'
 
 end

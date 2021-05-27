@@ -144,7 +144,7 @@ s.info_plist = {
 ]
 }
 s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC", "VALID_ARCHS"=>"arm64 arm64e armv7 armv7s x86_64", "VALID_ARCHS[sdk=iphoneos*]" => "arm64 arm64e armv7 armv7s", "VALID_ARCHS[sdk=iphonesimulator*]" => "x86_64"}
-s.source           = { :http => 'https://mas-artifacts.yodo1.com/4.2.0/iOS/Dev/Yodo1MasCore-4.2.0.zip' }
+s.source_files = s.name + '/Classes/**/*'
 s.public_header_files = s.name + '/Classes/**/*.h'
 #s.vendored_frameworks = s.name + '/Lib/**/*.framework'
 s.frameworks = 'UIKit', 'Foundation'

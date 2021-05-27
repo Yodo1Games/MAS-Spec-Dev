@@ -33,10 +33,10 @@ s.source           = { :http => 'https://mas-artifacts.yodo1.com/4.2.0/iOS/Dev/Y
 s.ios.deployment_target = '9.0'
 s.static_framework = true
 s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC", "VALID_ARCHS"=>"arm64 arm64e armv7 armv7s x86_64", "VALID_ARCHS[sdk=iphoneos*]" => "arm64 arm64e armv7 armv7s", "VALID_ARCHS[sdk=iphonesimulator*]" => "x86_64"}
-s.source           = { :http => 'https://mas-artifacts.yodo1.com/4.2.0/iOS/Dev/Yodo1MasMediationPangle-4.2.0.zip' }
+s.source_files = s.name + '/Classes/**/*'
 s.public_header_files = s.name + '/Classes/**/*.h'
 s.dependency 'Yodo1MasCore', '4.2.0'
-s.dependency 'Ads-Global/BUAdSDK', '3.4.2.3'
-s.dependency 'Ads-Global/Domestic', '3.4.2.3'
+s.dependency 'Ads-Global/BUAdSDK', '3.5.1.2'
+s.dependency 'Ads-Global/Domestic', '3.5.1.2'
 
 end

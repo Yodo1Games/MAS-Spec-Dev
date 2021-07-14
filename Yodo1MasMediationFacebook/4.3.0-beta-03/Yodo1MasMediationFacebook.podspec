@@ -1,5 +1,4 @@
 
-
 #
 # Be sure to run `pod lib lint Yodo1MasMediationFacebook.podspec' to ensure this is a
 # valid spec before submitting.
@@ -15,10 +14,10 @@ s.summary = 'Yodo1MasMediationFacebook'
 s.swift_version = '5.0'
 
 # This description is used to generate tags and improve search results.
-# Yodo1MasCN Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationBaidu Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMintegral Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasStandard Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Think: What does it do? Why did you write it? What is the focus?
-# Yodo1MasCN Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationBaidu Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMintegral Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasStandard Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Try to keep it short, snappy and to the point.
-# Yodo1MasCN Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationBaidu Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMintegral Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasStandard Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Write the description between the DESC delimiters below.
-# Yodo1MasCN Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationBaidu Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMintegral Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasStandard Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Finally, don't worry about the indent, CocoaPods strips it!
+# Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Think: What does it do? Why did you write it? What is the focus?
+# Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Try to keep it short, snappy and to the point.
+# Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Write the description between the DESC delimiters below.
+# Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdColony Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMyTarget Yodo1MasMediationPangle Yodo1MasMediationTapjoy Yodo1MasMediationTencent Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasUnityBridge build ossutilmac64 prepare.sh publish-one.sh publish.sh Finally, don't worry about the indent, CocoaPods strips it!
 
 s.description = <<-DESC
 TODO: Add long description of the pod here.
@@ -39,7 +38,6 @@ s.resource = s.name + '/Assets/**/*'
 s.source_files = s.name + '/Classes/**/*'
 s.public_header_files = s.name + '/Classes/**/*.h'
 s.dependency 'Yodo1MasCore', '4.3.0-beta-03'
-# s.dependency 'FBAudienceNetwork', '6.5.0'
-s.vendored_frameworks = s.name + '/Lib/**/*.framework'
+s.dependency 'FBAudienceNetwork', '6.5.0'
 
 end

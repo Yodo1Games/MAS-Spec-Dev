@@ -1,4 +1,5 @@
 
+
 #
 # Be sure to run `pod lib lint Yodo1MasMediationFacebook.podspec' to ensure this is a
 # valid spec before submitting.
@@ -38,6 +39,7 @@ s.resource = s.name + '/Assets/**/*'
 s.source_files = s.name + '/Classes/**/*'
 s.public_header_files = s.name + '/Classes/**/*.h'
 s.dependency 'Yodo1MasCore', '4.3.0-beta-03'
-s.dependency 'FBAudienceNetwork', '6.5.0'
+# s.dependency 'FBAudienceNetwork', '6.5.0'
+s.vendored_frameworks = s.name + '/Lib/**/*.framework'
 
 end

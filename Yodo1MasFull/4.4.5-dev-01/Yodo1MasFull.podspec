@@ -55,5 +55,5 @@ s.dependency 'Yodo1MasMediationTencentMax', '4.4.5-dev-01'
 s.dependency 'Yodo1MasMediationUnityAdsMax', '4.4.5-dev-01'
 s.dependency 'Yodo1MasMediationVungleMax', '4.4.5-dev-01'
 s.dependency 'Yodo1MasMediationYandexMax', '4.4.5-dev-01'
-#s.dependency 'Yodo1MasMediationYodo1', '4.4.5-dev-01'
+s.dependency 'Yodo1MasMediationYodo1', '4.4.5-dev-01'
 end

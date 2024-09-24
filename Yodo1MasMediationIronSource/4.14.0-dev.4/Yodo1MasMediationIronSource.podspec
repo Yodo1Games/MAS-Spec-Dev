@@ -44,7 +44,7 @@ sub.resource = s.name + '/Assets/**/*'
 
 sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
 sub.dependency 'Yodo1MasCore', '4.14.0-dev.4'
-sub.dependency 'IronSourceSDK', '8.3.0.0'
+sub.dependency 'IronSourceSDK', '8.1.0.0'
 end
 s.subspec 'AppLovin' do |sub|
 sub.dependency 'Yodo1MasMediationIronSource/Core', '4.14.0-dev.4'
@@ -53,7 +53,7 @@ sub.vendored_frameworks = s.name + '/Lib/AppLovinMediationIronSourceAdapter.xcfr
 end
 # s.subspec 'AdMob' do |sub|
 # sub.dependency, '4.14.0-dev.4'
-# sub.dependency 'Google-Mobile-Ads-SDK', '11.9.0'
+# sub.dependency 'Google-Mobile-Ads-SDK', '11.5.0'
 # sub.vendored_frameworks = s.name + '/Lib/IronSourceAdapter.xcframework'
 # end
 end

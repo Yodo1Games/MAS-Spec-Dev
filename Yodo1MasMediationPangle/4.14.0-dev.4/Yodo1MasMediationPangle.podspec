@@ -52,7 +52,7 @@ sub.vendored_frameworks = s.name + '/Lib/AppLovinMediationByteDanceAdapter.xcfra
 end
 # s.subspec 'AdMob' do |sub|
 # sub.dependency, '4.14.0-dev.4'
-# sub.dependency 'Google-Mobile-Ads-SDK', '11.9.0'
+# sub.dependency 'Google-Mobile-Ads-SDK', '11.5.0'
 # sub.vendored_frameworks = s.name + '/Lib/PangleAdapter.xcframework'
 # end
 # s.subspec 'IronSource' do |sub|

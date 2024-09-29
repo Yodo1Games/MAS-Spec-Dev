@@ -168,14 +168,16 @@ s.xcconfig = {
 "GENERATE_INFOPLIST_FILE" => "YES"
 }
 s.pod_target_xcconfig = {
-"VALID_ARCHS" => "arm64 arm64e armv7 armv7s x86_64",
-"VALID_ARCHS[sdk=iphoneos*]" => "arm64 arm64e armv7 armv7s",
-"VALID_ARCHS[sdk=iphonesimulator*]" => "x86_64 arm64"
+"OTHER_LDFLAGS": "-ObjC"
+# "VALID_ARCHS" => "arm64 arm64e armv7 armv7s x86_64",
+# "VALID_ARCHS[sdk=iphoneos*]" => "arm64 arm64e armv7 armv7s",
+# "VALID_ARCHS[sdk=iphonesimulator*]" => "x86_64 arm64"
 }
 s.resources = s.name + '/Assets/Yodo1MasCore.bundle', s.name + '/Assets/Yodo1MasCore.plist'
-
-s.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
+s.source_files = s.name + '/Classes/**/*'
+s.public_header_files = s.name + '/Classes/**/*.h'
 s.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Security'
+s.weak_frameworks = 'AppTrackingTransparency'
 s.libraries = 'sqlite3', 'z', 'resolv'
 s.requires_arc = true
 s.dependency 'AFNetworking'

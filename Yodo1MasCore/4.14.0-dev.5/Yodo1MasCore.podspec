@@ -9,6 +9,7 @@
 Pod::Spec.new do |s|
 s.name = 'Yodo1MasCore'
 s.version = '4.14.0-dev.5'
+s.platform = :ios, '12.0'
 s.summary = 'Yodo1MasCore for iOS'
 s.swift_version = '5.0'
 
@@ -27,7 +28,7 @@ s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.author = { 'Yodo1Games' => 'devadmin@yodo1.com' }
 s.source = { :http => 'https://mas-artifacts.yodo1.com/4.14.0-dev.5/iOS/Dev/Yodo1MasCore-4.14.0-dev.5.zip' }
 s.static_framework = true
-s.ios.deployment_target = '12.0'
+# s.ios.deployment_target = '12.0'
 s.info_plist = {
 'AppLovinSdkKey' => 'xcGD2fy-GdmiZQapx_kUSy5SMKyLoXBk8RyB5u9MVv34KetGdbl4XrXvAUFy0Qg9scKyVTI0NM4i_yzdXih4XE',
 'SKAdNetworkItems' => [
@@ -168,10 +169,11 @@ s.xcconfig = {
 "GENERATE_INFOPLIST_FILE" => "YES"
 }
 s.pod_target_xcconfig = {
-"OTHER_LDFLAGS" => "-ObjC",
 # "VALID_ARCHS" => "arm64 arm64e armv7 armv7s x86_64",
 # "VALID_ARCHS[sdk=iphoneos*]" => "arm64 arm64e armv7 armv7s",
 # "VALID_ARCHS[sdk=iphonesimulator*]" => "x86_64 arm64"
+'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64 arm64',
+'ONLY_ACTIVE_ARCH' => 'YES'
 }
 s.resources = s.name + '/Assets/Yodo1MasCore.bundle', s.name + '/Assets/Yodo1MasCore.plist'
 s.source_files = s.name + '/Classes/**/*'

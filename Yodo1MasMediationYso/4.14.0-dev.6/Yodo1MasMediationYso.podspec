@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 s.name = 'Yodo1MasMediationYso'
 s.version = '4.14.0-dev.6'
 s.summary = 'YSO Network adapter used for mediation with the Yodo1 MAS SDK'
-s.swift_version = '5.0'
-s.swift_versions = '5.0'
+s.swift_version = '5.7'
+s.swift_versions = '5.7'
 
 # This description is used to generate tags and improve search results.
 # Yodo1MasCN Yodo1MasCore Yodo1MasFull Yodo1MasMediationAdMob Yodo1MasMediationApplovin Yodo1MasMediationBidMachine Yodo1MasMediationBigo Yodo1MasMediationCSJ Yodo1MasMediationFacebook Yodo1MasMediationFyber Yodo1MasMediationInMobi Yodo1MasMediationIronSource Yodo1MasMediationMintegral Yodo1MasMediationMoloco Yodo1MasMediationPangle Yodo1MasMediationTencent Yodo1MasMediationToBid Yodo1MasMediationTradPlus Yodo1MasMediationUnityAds Yodo1MasMediationVungle Yodo1MasMediationYandex Yodo1MasMediationYodo1 Yodo1MasMediationYso adapter-all.sh adapter-download.sh adapter-one.sh build config.json dependencies.sh framework-all.sh framework-one.sh framework.sh mas.py ossutilmac64 podspec.sh release-all.sh release-one-with-codes.sh release-one-with-framework.sh version-all.sh version-one.sh xcodebuild-framework.sh Think: What does it do? Why did you write it? What is the focus?

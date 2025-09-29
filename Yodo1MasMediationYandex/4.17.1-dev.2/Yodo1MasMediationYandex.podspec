@@ -18,8 +18,8 @@ This is an adapter to be used in conjunction with the Yodo1 MAS SDK.
 DESC
 
 s.source = { :http => 'https://mas-artifacts.yodo1.com/4.17.1-dev.2/iOS/Dev/Yodo1MasMediationYandex-4.17.1-dev.2.zip' }
-s.swift_versions = '5.0'
-s.swift_version = '5.0'
+s.swift_versions = '5.9.0'
+s.swift_version = '5.9.0'
 s.ios.deployment_target = '13.0'
 s.static_framework = true
 s.xcconfig = {

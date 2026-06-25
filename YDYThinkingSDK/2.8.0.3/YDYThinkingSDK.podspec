@@ -16,7 +16,7 @@ s.version = '2.8.0.3'
   s.description      = <<-DESC
   TODO: YDYThinkingSDK
   DESC
-s.source = { :http => 'https://mas-artifacts.yodo1.com/YDYThinkingSDK/2.8.0.3/iOS/Dev/YDYThinkingSDK-2.8.0.3.zip' }
+s.source = { :http => 'https://mas-artifacts.yodo1.com/YDYThinkingSDK/2.8.0.3/iOS/DevPre/YDYThinkingSDK-2.8.0.3.zip' }
   s.swift_version    = '5.0'
   
   s.ios.deployment_target = '13.0'

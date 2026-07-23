@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Yodo1MasMediationFyber'
-s.version = '5.0.0-dev.1'
-s.license = { :type => 'MIT', :file => 'LICENSE' }
+  s.version = '5.0.0-dev.1'
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage         = 'https://www.yodo1.com/'
   s.author           = { 'Yodo1Games' => 'devadmin@yodo1.com' }
   s.summary          = 'Fyber adapter used for mediation with the Yodo1 MAS SDK'
@@ -9,7 +9,7 @@ s.license = { :type => 'MIT', :file => 'LICENSE' }
   This is an adapter to be used in conjunction with the Yodo1 MAS SDK.
   DESC
   
-s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1MasMediationFyber-5.0.0-dev.1.zip' }
+  s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1MasMediationFyber-5.0.0-dev.1.zip' }
   s.swift_version    = '5.0'
   s.ios.deployment_target = '13.0'
   s.static_framework = true
@@ -26,28 +26,28 @@ s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1
   s.subspec 'Core' do |sub|
     sub.resource = s.name + '/Assets/Yodo1MasFyber.plist'
 
-sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
+    sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
+    sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
     sub.dependency 'Fyber_Marketplace_SDK', '8.4.6'
   end
   s.subspec 'AppLovin' do |sub|
-sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
-sub.dependency 'AppLovinSDK', '13.6.1'
+    sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
+    sub.dependency 'AppLovinSDK', '13.6.1'
     sub.vendored_frameworks = s.name + '/Lib/AppLovinMediationFyberAdapter.xcframework'
   end
   s.subspec 'AdMob' do |sub|
-sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
-sub.dependency 'Google-Mobile-Ads-SDK', '13.1.0'
+    sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
+    sub.dependency 'Google-Mobile-Ads-SDK', '13.1.0'
     sub.vendored_frameworks = s.name + '/Lib/DTExchangeAdapter.xcframework'
   end
   s.subspec 'IronSource' do |sub|
-sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
-sub.dependency 'IronSourceSDK', '9.3.0.0'
+    sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
+    sub.dependency 'IronSourceSDK', '9.3.0.0'
     sub.vendored_frameworks = s.name + '/Lib/ISFyberAdapter.xcframework'
   end
   s.subspec 'TopOn' do |sub|
-sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
-sub.dependency 'TPNiOS', '6.5.34'
+    sub.dependency 'Yodo1MasMediationFyber/Core', '5.0.0-dev.1'
+    sub.dependency 'TPNiOS', '6.5.34'
     sub.vendored_frameworks = s.name + '/Lib/AnyThinkFyberAdapter.xcframework'
   end
 end

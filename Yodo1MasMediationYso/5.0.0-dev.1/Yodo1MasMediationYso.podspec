@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Yodo1MasMediationYso'
-s.version = '5.0.0-dev.1'
-s.license = { :type => 'MIT', :file => 'LICENSE' }
+  s.version = '5.0.0-dev.1'
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage         = 'https://www.yodo1.com/'
   s.author           = { 'Yodo1Games' => 'devadmin@yodo1.com' }
   s.summary          = 'YSO Network adapter used for mediation with the Yodo1 MAS SDK'
@@ -9,7 +9,7 @@ s.license = { :type => 'MIT', :file => 'LICENSE' }
   This is an adapter to be used in conjunction with the Yodo1 MAS SDK.
   DESC
   
-s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1MasMediationYso-5.0.0-dev.1.zip' }
+  s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1MasMediationYso-5.0.0-dev.1.zip' }
   s.swift_version    = '5.0'
   s.swift_versions   = '5.0'
   s.ios.deployment_target = '13.0'
@@ -28,15 +28,15 @@ s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1
   s.subspec 'Core' do |sub|
     sub.resource = s.name + '/Assets/**/*'
 
-sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
+    sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
+    sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
     sub.dependency 'YsoNetworkSDK', '1.1.31'
   end
   s.subspec 'AppLovin' do |sub|
-sub.dependency 'Yodo1MasMediationYso/Core', '5.0.0-dev.1'
-sub.dependency 'AppLovinSDK', '13.6.1'
+    sub.dependency 'Yodo1MasMediationYso/Core', '5.0.0-dev.1'
+    sub.dependency 'AppLovinSDK', '13.6.1'
     #    sub.vendored_frameworks = s.name + '/Lib/AppLovinMediationYSONetworkAdapter.xcframework'
 
-sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
+    sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
   end
 end

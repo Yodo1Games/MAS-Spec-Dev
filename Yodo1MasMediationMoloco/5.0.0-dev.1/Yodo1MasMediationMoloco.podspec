@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Yodo1MasMediationMoloco'
-s.version = '5.0.0-dev.1'
-s.license = { :type => 'MIT', :file => 'LICENSE' }
+  s.version = '5.0.0-dev.1'
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage         = 'https://www.yodo1.com/'
   s.author           = { 'Yodo1Games' => 'devadmin@yodo1.com' }
   s.summary          = 'Moloco adapter used for mediation with the Yodo1 MAS SDK'
@@ -9,7 +9,7 @@ s.license = { :type => 'MIT', :file => 'LICENSE' }
   This is an adapter to be used in conjunction with the Yodo1 MAS SDK.
   DESC
   
-s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1MasMediationMoloco-5.0.0-dev.1.zip' }
+  s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1MasMediationMoloco-5.0.0-dev.1.zip' }
   s.swift_version    = '5.0'
   s.ios.deployment_target = '13.0'
   s.static_framework = true
@@ -26,23 +26,23 @@ s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1
   s.subspec 'Core' do |sub|
     sub.resource = s.name + '/Assets/**/*'
 
-sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
+    sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
+    sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
     sub.dependency 'MolocoSDKiOS', '4.4.0'
   end
   s.subspec 'AppLovin' do |sub|
-sub.dependency 'Yodo1MasMediationMoloco/Core', '5.0.0-dev.1'
-sub.dependency 'AppLovinSDK', '13.6.1'
+    sub.dependency 'Yodo1MasMediationMoloco/Core', '5.0.0-dev.1'
+    sub.dependency 'AppLovinSDK', '13.6.1'
     sub.vendored_frameworks = s.name + '/Lib/AppLovinMediationMolocoAdapter.xcframework'
   end
   s.subspec 'AdMob' do |sub|
-sub.dependency 'Yodo1MasMediationMoloco/Core', '5.0.0-dev.1'
-sub.dependency 'Google-Mobile-Ads-SDK', '13.1.0'
+    sub.dependency 'Yodo1MasMediationMoloco/Core', '5.0.0-dev.1'
+    sub.dependency 'Google-Mobile-Ads-SDK', '13.1.0'
     sub.vendored_frameworks = s.name + '/Lib/MolocoAdapter.xcframework'
   end
   s.subspec 'IronSource' do |sub|
-sub.dependency 'Yodo1MasMediationMoloco/Core', '5.0.0-dev.1'
-sub.dependency 'IronSourceSDK', '9.3.0.0'
+    sub.dependency 'Yodo1MasMediationMoloco/Core', '5.0.0-dev.1'
+    sub.dependency 'IronSourceSDK', '9.3.0.0'
     sub.vendored_frameworks = s.name + '/Lib/ISMolocoAdapter.xcframework'
   end
 end

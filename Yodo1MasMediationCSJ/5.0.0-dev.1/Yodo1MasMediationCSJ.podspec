@@ -29,18 +29,18 @@ s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.1/iOS/Dev/Yodo1
     sub.resource = s.name + '/Assets/**/*'
 
 sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
+    sub.dependency 'Yodo1MasCore', '5.0.0-dev.1'
     sub.dependency 'Ads-CN/BUAdSDK', '7.6.0.4'
     sub.dependency 'Ads-CN/CSJMediation-Only', '7.6.0.4'
   end
   #  s.subspec 'AppLovin' do |sub|
-# sub.dependency, '5.0.0-dev.1'
-# sub.dependency, '13.6.1'
+  # sub.dependency, '5.0.0-dev.1'
+  # sub.dependency, '13.6.1'
   #    sub.vendored_frameworks = s.name + '/Lib/AppLovinMediationCSJAdapter.xcframework'
   #  end
   s.subspec 'ToBid' do |sub|
-sub.dependency 'Yodo1MasMediationCSJ/Core', '5.0.0-dev.1'
-sub.dependency 'ToBid-iOS/ToBidSDK', '5.7.3'
+    sub.dependency 'Yodo1MasMediationCSJ/Core', '5.0.0-dev.1'
+    sub.dependency 'ToBid-iOS/ToBidSDK', '5.7.3'
     sub.vendored_frameworks = s.name + '/Lib/WindMillCSJAdapter.xcframework', s.name + '/Lib/WindMillGroMoreAdapter.xcframework'
   end
 end

@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.4/iOS/Dev/Yodo1MasMediationAurion11-5.0.0-dev.4.zip' }
   s.swift_version    = '5.0'
   s.swift_versions   = '5.0'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   s.static_framework = true
   s.xcconfig = {
     "OTHER_LDFLAGS" => "-ObjC",
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
     sub.resource = s.name + '/Assets/**/*'
 
     sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-    sub.dependency 'Yodo1MasCore', '5.0.0-dev.4'
-    sub.dependency 'Yodo1MasMediationAurion11/A11Mediation', '5.0.0-dev.4'
+    sub.dependency "Yodo1MasCore", '5.0.0-dev.4'
+    sub.dependency "Yodo1MasMediationAurion11/A11Mediation", '5.0.0-dev.4'
   end
 end

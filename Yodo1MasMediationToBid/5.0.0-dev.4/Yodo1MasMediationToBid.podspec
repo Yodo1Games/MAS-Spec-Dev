@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.4/iOS/Dev/Yodo1MasMediationToBid-5.0.0-dev.4.zip' }
   s.swift_version    = '5.0'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   s.static_framework = true
   s.xcconfig = {
     "OTHER_LDFLAGS" => "-ObjC",
@@ -27,11 +27,11 @@ Pod::Spec.new do |s|
     sub.resource = s.name + '/Assets/**/*'
 
     sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-    sub.dependency 'Yodo1MasCore', '5.0.0-dev.4'
-    sub.dependency 'ToBid-iOS/ToBidSDK', '5.7.4'
-    sub.dependency 'ToBid-iOS/BidResultAdapter', '5.7.4'
-    sub.dependency 'ToBid-iOS/BaiduAdapter', '5.7.4'
-    sub.dependency 'ToBid-iOS/KSAdapter', '5.7.4'
+    sub.dependency "Yodo1MasCore", '5.0.0-dev.4'
+    sub.dependency "ToBid-iOS-RC/ToBidSDK", '5.10.1'
+    sub.dependency "ToBid-iOS-RC/BidResultAdapter", '5.10.1'
+    sub.dependency "ToBid-iOS-RC/BaiduAdapter", '5.10.1'
+    sub.dependency "ToBid-iOS-RC/KSAdapter", '5.10.1'
     #    sub.dependency 'ToBid-iOS/CSJMediationAdapter', '4.0.0'
     #    sub.dependency 'ToBid-iOS/TouTiaoAdapter', '4.0.0'
     #    sub.dependency 'ToBid-iOS/GDTAdapter', '4.0.0'

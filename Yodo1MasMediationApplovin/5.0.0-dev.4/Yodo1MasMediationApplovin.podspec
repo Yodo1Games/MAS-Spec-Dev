@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.4/iOS/Dev/Yodo1MasMediationApplovin-5.0.0-dev.4.zip' }
   s.swift_version    = '5.0'
   
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   s.static_framework = true
   
   s.xcconfig = {
@@ -30,27 +30,27 @@ Pod::Spec.new do |s|
     sub.resource = s.name + '/Assets/Yodo1MasAppLovin.plist'
 
     sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-    sub.dependency 'Yodo1MasCore', '5.0.0-dev.4'
-    sub.dependency 'AppLovinSDK', '13.6.4'
+    sub.dependency "Yodo1MasCore", '5.0.0-dev.4'
+    sub.dependency "AppLovinSDK", '13.6.4'
   end
   s.subspec 'AdMob' do |sub|
-    sub.dependency 'Yodo1MasMediationApplovin/Core', '5.0.0-dev.4'
-    sub.dependency 'Google-Mobile-Ads-SDK', '13.7.0'
+    sub.dependency "Yodo1MasMediationApplovin/Core", '5.0.0-dev.4'
+    sub.dependency "Google-Mobile-Ads-SDK", '13.11.0'
     sub.vendored_frameworks = s.name + '/Lib/AppLovinAdapter.xcframework'
   end
-  s.subspec 'IronSource' do |sub|
-    sub.dependency 'Yodo1MasMediationApplovin/Core', '5.0.0-dev.4'
-    sub.dependency 'IronSourceSDK', '9.3.0.0'
-    sub.vendored_frameworks = s.name + '/Lib/ISAppLovinAdapter.xcframework'
-  end
-  s.subspec 'TopOn' do |sub|
-    sub.dependency 'Yodo1MasMediationApplovin/Core', '5.0.0-dev.4'
-    sub.dependency 'TPNiOS', '6.5.73'
-    sub.vendored_frameworks = s.name + '/Lib/AnyThinkApplovinAdapter.xcframework'
-  end
+#  s.subspec 'IronSource' do |sub|
+#    sub.dependency 'Yodo1MasMediationApplovin/Core', '5.0.0'
+#    sub.dependency 'IronSourceSDK', '9.6.1.0'
+#    sub.vendored_frameworks = s.name + '/Lib/ISAppLovinAdapter.xcframework'
+#  end
+#  s.subspec 'TopOn' do |sub|
+#    sub.dependency 'Yodo1MasMediationApplovin/Core', '5.0.0'
+#    sub.dependency 'TPNiOS', '6.5.73'
+#    sub.vendored_frameworks = s.name + '/Lib/AnyThinkApplovinAdapter.xcframework'
+#  end
   s.subspec 'Aurion11' do |sub|
-    sub.dependency 'Yodo1MasMediationApplovin/Core', '5.0.0-dev.4'
-    sub.dependency 'Yodo1MasMediationAurion11/A11Mediation', '5.0.0-dev.4'
+    sub.dependency "Yodo1MasMediationApplovin/Core", '5.0.0-dev.4'
+    sub.dependency "Yodo1MasMediationAurion11/A11Mediation", '5.0.0-dev.4'
     sub.vendored_frameworks = s.name + '/Lib/A11MediationAppLovinMAXAdapter.xcframework'
   end
 end

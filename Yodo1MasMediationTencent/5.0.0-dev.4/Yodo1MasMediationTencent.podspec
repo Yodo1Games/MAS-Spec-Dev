@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.source = { :http => 'https://mas-artifacts.yodo1.com/5.0.0-dev.4/iOS/Dev/Yodo1MasMediationTencent-5.0.0-dev.4.zip' }
   s.swift_version    = '5.0'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   s.static_framework = true
   s.xcconfig = {
     "OTHER_LDFLAGS" => "-ObjC",
@@ -30,12 +30,12 @@ Pod::Spec.new do |s|
     sub.resource = s.name + '/Assets/**/*'
 
     sub.vendored_frameworks = "#{s.name}/#{s.name}.xcframework"
-    sub.dependency 'Yodo1MasCore', '5.0.0-dev.4'
-    sub.dependency 'GDTMobSDK', '4.15.90'
+    sub.dependency "Yodo1MasCore", '5.0.0-dev.4'
+    sub.dependency 'GDTMobSDK', '4.16.11'
   end
   s.subspec 'ToBid' do |sub|
-    sub.dependency 'Yodo1MasMediationTencent/Core', '5.0.0-dev.4'
-    sub.dependency 'ToBid-iOS/ToBidSDK', '5.7.4'
+    sub.dependency "Yodo1MasMediationTencent/Core", '5.0.0-dev.4'
+    sub.dependency "ToBid-iOS-RC/ToBidSDK", '5.10.1'
     sub.vendored_frameworks = s.name + '/Lib/WindMillGDTAdapter.xcframework'
   end
 end
